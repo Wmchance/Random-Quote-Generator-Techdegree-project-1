@@ -21,6 +21,7 @@ const quotes = [
       source: "Bilbo Baggins",
       citation: "The Lord of the Rings",
       year: "1955",
+      tags: "Book",
     },
 
     {
@@ -28,6 +29,7 @@ const quotes = [
       source: "Bob Dylan",
       citation: "The Freewheelin’ Bob Dylan",
       year: "1963",
+      tags: "Song",
     },
 
     {
@@ -35,6 +37,7 @@ const quotes = [
       source: "Led Zeppelin",
       citation: "Over the Hills and Far Away",
       year: "1973",
+      tags: "Song",
     },
 
     {
@@ -42,6 +45,7 @@ const quotes = [
       source: "Kurt Vonnegut",
       citation: "Slaughterhouse-Five",
       year: "1969",
+      tags: "Book",
     },
 
     {
@@ -49,6 +53,7 @@ const quotes = [
       source: "Samantha Black Crow",
       citation: "American Gods",
       year: "2001",
+      tags: "Book",
     },
 
 ]
@@ -96,7 +101,14 @@ const printQuote = function () {
 
     HTML += `<span class="year"> ${randomQuote.year} </span>`;
 
-}
+  }
+
+  //Checks if the 'tags' property exists, and adds it's value to the string if so
+  if (randomQuote.tags != undefined) {
+
+    HTML += `<span class="tags"> ${randomQuote.tags} </span>`;
+
+  }
 
   HTML += `</p>`;
 
