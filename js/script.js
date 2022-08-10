@@ -122,12 +122,14 @@ const printQuote = function () {
   let blue = Math.floor(Math.random() * 256);
   randomRGB = `rgb( ${red}, ${green}, ${blue} )`;
 
-  //Found below selector from https://www.w3schools.com/jsref/prop_style_background.asp
-  document.body.style.background = randomRGB;
+  document.body.style.background = randomRGB; //Found selector @ https://www.w3schools.com/jsref/prop_style_background.asp
 
 }
 
 printQuote();
+
+//Set timer so that a new quote prints at regular intervals. function syntax found @ https://www.w3schools.com/jsref/met_win_setinterval.asp
+setInterval(printQuote, 10000);
 
 /***
  * click event listener for the print quote button
