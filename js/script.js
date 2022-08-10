@@ -50,13 +50,16 @@ const quotes = [
 
 ]
 
-//console.log(quotes[0].quote);
-
 /***
  * `getRandomQuote` function
 ***/
 
+const getRandomQuote = function () {
 
+  const randomNum = Math.floor(Math.random() * quotes.length);
+  return quotes[randomNum];
+  
+}
 
 /***
  * `printQuote` function
