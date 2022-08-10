@@ -110,10 +110,20 @@ const printQuote = function () {
 
   }
 
+  //Add closing bracket
   HTML += `</p>`;
 
   //display constructed string to user
   document.getElementById('quote-box').innerHTML = HTML;
+
+  //Set random background color
+  let red = Math.floor(Math.random() * 256);
+  let green = Math.floor(Math.random() * 256);
+  let blue = Math.floor(Math.random() * 256);
+  randomRGB = `rgb( ${red}, ${green}, ${blue} )`;
+
+  //Found below selector from https://www.w3schools.com/jsref/prop_style_background.asp
+  document.body.style.background = randomRGB;
 
 }
 
