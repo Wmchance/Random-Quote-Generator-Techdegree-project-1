@@ -56,6 +56,33 @@ const quotes = [
       tags: "Book",
     },
 
+    {
+      quote: "You’re dead, this is the afterlife — and I’m God",
+      source: "Q",
+      citation: "Star Trek: The Next Generation",
+      tags: "T.V. Show",
+    },
+
+    {
+      quote: "Okay, everybody who's an Immortal, raise their hand",
+      source: "Richie Ryan",
+      citation: "Highlander: The Series",
+      tags: "T.V. Show",
+    },
+
+    {
+      quote: "Wahoo!",
+      source: "Mario",
+      tags: "Video Game",
+    },
+
+    {
+      quote: "You Big Stupid Jellyfish!",
+      source: "Commander Shepard",
+      citation: "Mass Effect",
+      tags: "Video Game",
+    },
+
 ]
 
 /***
@@ -106,7 +133,7 @@ const printQuote = function () {
   //Checks if the 'tags' property exists, and adds it's value to the string if so
   if (randomQuote.tags != undefined) {
 
-    HTML += `<span class="tags"> ${randomQuote.tags} </span>`;
+    HTML += `<span class="tags"> *${randomQuote.tags} </span>`;
 
   }
 
